@@ -14,7 +14,7 @@
     <div class="header flex justify-between items-center py-5 border-b-2">
         <div class="left">
             <div class="logo flex justify-center items-center">
-                <img src="./assets/logo.png" class="w-[50px] h-full"  alt="">
+                <img src="./assets/logo.png" class="w-[50px] h-full" alt="">
                 <div class="available-balance flex-col">
                     <h2 class="text-2xl font-bold">$<span id="balance">45000</span></h2>
                     <p>Available Balance</p>
@@ -53,11 +53,28 @@
             <p>Transaction</p>
         </button>
     </div>
+    <fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-full border p-4">
+        <h2 class="font-bold text-xl text-center">Cash Out</h2>
+
+        <label class="font-bold">Agent Number</label>
+        <input id="agent-number" type="tel" class="input w-full" placeholder="Enter Agent Number" />
+
+        
+        <label class="font-bold">Amount</label>
+        <input id="cashout-amount" type="number" class="input w-full" placeholder="Enter Amount" />
+
+        
+        <label class="font-bold">4 Digit PIN</label>
+        <input id="cashout-pin" type="password" class="input w-full" placeholder="Enter Your 4 Digit PIN" />
+        
+
+        <button id="cashout-btn" class="btn btn-primary mt-4">Withdraw Money</button>
+    </fieldset>
 
 
 
 
-    <script src="script.js"></script>
+    <script src="cashout.js"></script>
 </body>
 
 </html>
